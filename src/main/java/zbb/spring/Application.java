@@ -1,4 +1,4 @@
-package com.zbb.spring;
+package zbb.spring;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -21,7 +21,7 @@ public class Application {
 
 	public static void main(String[] args){
 		ApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
-		Messager messager = context.getBean(Messager.class);
-		messager.printMessage();
+		Message message = context.getBean(Message.class);
+		message.printMessage();
 	}
 }

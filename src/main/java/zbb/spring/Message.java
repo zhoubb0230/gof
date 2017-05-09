@@ -1,19 +1,18 @@
-package com.zbb.spring;
+package zbb.spring;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Messager {
+public class Message {
 
-	@Autowired
 	final MessageService service;
 	
-	public Messager(MessageService service){
+	public Message(MessageService service){
 		this.service = service;
 	}
 	
 	public void printMessage() {
         System.out.println(this.service.getMessage());
     }
+
 }
