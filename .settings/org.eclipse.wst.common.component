@@ -3,6 +3,7 @@
     <wb-module deploy-name="gof">
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <property name="context-root" value="/gof"/>
         <property name="java-output-path" value="/gof/src/main/webapp/WEB-INF/classes"/>
     </wb-module>
